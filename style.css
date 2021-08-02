@@ -1,0 +1,43 @@
+h1 {
+    font-size: 24px;
+    color: antiquewhite;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.current {
+  position: absolute;
+  right: 650px;
+  width: 500px;
+  border-style: ridge;
+  border-color: black;
+}
+
+h2 {
+    position: absolute;
+    right: 650px;
+    bottom: 225px;
+    width: 500px;
+    border-style: ridge;
+    border-color: black;
+}
+
+.future {
+    position: absolute;
+    right: 650px;
+    bottom: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.future .weather-item {
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
