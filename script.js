@@ -8,7 +8,8 @@ var weather = {
             +this.apiKey
         )
         .then((response) => response.json())
-        .then((data) => console.log(data));
+        .then((data) => this.display(data));
+        //console.log(data));
     },
     display: function(data) {
         const {name} = data;
@@ -24,7 +25,7 @@ var weather = {
         document.querySelector(".humidity").innerText = "Humidity:" + humidity + "%";
     },
     search: function () {
-        this.getWeather(document.querySelector(".search-button").value);
+        this.getWeather(document.querySelector(".search-city").value);
     }
 };
 
@@ -33,3 +34,5 @@ document
     .addEventListener("click", function () {
         weather.search();
     });
+
+weather.getWeather("Lawrence");
