@@ -36,3 +36,5 @@ document
     });
 
 weather.getWeather("Lawrence");
+
+document.querySelector(".today").innerText = moment().format('MMMM Do YYYY, h:mm:ss a')
